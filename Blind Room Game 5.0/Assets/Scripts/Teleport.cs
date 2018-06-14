@@ -5,20 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Teleport : MonoBehaviour {
 
-    private bool playerIsDownstairs = false;
+	[SerializeField]
+	private string nextScene;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
-        {
-            if (!playerIsDownstairs)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-            else if (playerIsDownstairs)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            }
-        }
+		SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 }
