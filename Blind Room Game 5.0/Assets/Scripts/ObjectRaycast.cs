@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RaycastTesting : MonoBehaviour {
+public class ObjectRaycast : MonoBehaviour {
 
 	public float maxRayDistance;
 	public LayerMask activeLayers;
-    public GameObject raycastedObject;
+
+    private GameObject raycastedObject;
 
     private void Start()
     {
