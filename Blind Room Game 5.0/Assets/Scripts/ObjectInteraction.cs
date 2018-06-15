@@ -25,7 +25,7 @@ public abstract class ObjectInteraction : MonoBehaviour {
 	{ 
 		if (inTrigger) {
 			if (Input.GetKeyDown(KeyCode.F) && interactable) {
-				ActivateLinkedObject();
+
 				StartCoroutine("TriggerObjectCo");
 			}
 		}
@@ -48,11 +48,11 @@ public abstract class ObjectInteraction : MonoBehaviour {
 	}
 
 	private IEnumerator TriggerObjectCo() {
-		
+
 		objectTriggered = !objectTriggered;
 		yield return new WaitForSeconds(triggerAgainWaitTime);
-		//allowedToTrigger = true;
-		inTrigger = false;
+        ActivateLinkedObject();
+		//inTrigger = false;
 	}
 
 }

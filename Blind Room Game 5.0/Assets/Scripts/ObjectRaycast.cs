@@ -20,13 +20,14 @@ public class ObjectRaycast : MonoBehaviour {
 		Ray ray = new Ray(transform.position, transform.forward);
 		RaycastHit hit;
 
-        // Check if the ray hits object with the right layer
-        if (Physics.Raycast(ray, out hit, maxRayDistance, activeLayers))
-        {
+		// Check if the ray hits object with the right layer
+		if (Physics.Raycast(ray, out hit, maxRayDistance, activeLayers))
+		{
 			raycastedObject = hit.transform.gameObject;
 			raycastedObject.GetComponent<ObjectInteraction>().inTrigger = true;
-            Debug.DrawLine(hit.point, hit.point + Vector3.up * 5, Color.green);
-        }
+			Debug.DrawLine(hit.point, hit.point + Vector3.up * 5, Color.green);
+		}
+
 	}
 
 }

@@ -17,7 +17,7 @@ public class InteractItem : ObjectInteraction {
     // Update is called once per frame
     protected override void Update()
     {
-        if (!base.interactable)
+		if (!base.interactable)
         {
 			myCollider.enabled = false;
         } else
@@ -25,7 +25,7 @@ public class InteractItem : ObjectInteraction {
 			myCollider.enabled = true;
         }
 
-        if (base.interactable && Input.GetKeyDown(KeyCode.F))
+		if (base.interactable && Input.GetKeyDown(KeyCode.F))
         {
 			base.ActivateLinkedObject();
 			Destroy(gameObject);	
