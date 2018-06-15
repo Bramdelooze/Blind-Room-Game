@@ -10,6 +10,9 @@ public class InteractOneTimeSound : ObjectInteraction {
     [SerializeField]
     private float timeBeforePlaying;
 
+    [SerializeField]
+    private GameObject conversationPhone;
+
     private bool soundIsPlaying;
 
     protected override void Start()
@@ -34,6 +37,10 @@ public class InteractOneTimeSound : ObjectInteraction {
         if (Input.GetKeyDown(KeyCode.F) && base.interactable && timeBeforePlaying <= 0)
         {
             sound.Stop();
+            if(gameObject.tag == "Phone")
+            {
+                Instantiate(conversationPhone, gameObject.transform);
+            }
         }
         base.Update();
     }
