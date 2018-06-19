@@ -79089,7 +79089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inTrigger: 0
-  linkedObject: {fileID: 0}
+  linkedObject: {fileID: 1632945566}
   interactable: 1
   triggerAgainWaitTime: 0
   sound: {fileID: 1973709785}
