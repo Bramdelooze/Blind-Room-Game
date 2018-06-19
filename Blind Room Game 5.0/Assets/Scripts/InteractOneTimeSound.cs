@@ -39,6 +39,7 @@ public class InteractOneTimeSound : ObjectInteraction {
             sound.Stop();
             if(gameObject.tag == "Phone")
             {
+                interactable = false;
                 Instantiate(conversationPhone, gameObject.transform);
             }
         }

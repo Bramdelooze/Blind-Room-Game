@@ -7085,7 +7085,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 208934029}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -14.34, y: 1.31, z: 9.08}
+  m_LocalPosition: {x: -13.95, y: 1.31, z: 9.08}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20854,7 +20854,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 610392513}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.7953843, y: 3.0743673, z: 0.4361154}
@@ -78908,7 +78908,7 @@ GameObject:
   - component: {fileID: 1973709784}
   - component: {fileID: 1973709786}
   - component: {fileID: 1973709785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: telefoon
   m_TagString: Phone
   m_Icon: {fileID: 0}
